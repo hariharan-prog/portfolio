@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Hariharan V — Full Stack Developer & UI/UX Designer. Building beautiful, fast, and accessible web experiences." />
+  <title>Hariharan V — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <button class="nav-logo" onclick="showTab(null)">HARIHARAN V PORTFOLIO</button>
+    <ul class="nav-links">
+      <li><button class="nav-btn" data-tab="about" onclick="showTab('about')">ABOUT</button></li>
+      <li><button class="nav-btn" data-tab="skills" onclick="showTab('skills')">SKILLS</button></li>
+      <li><button class="nav-btn" data-tab="certifications" onclick="showTab('certifications')">CERTIFICATIONS</button>
+      </li>
+      <li><button class="nav-btn" data-tab="personal" onclick="showTab('personal')">PERSONAL INFO</button></li>
+      <li><button class="nav-btn" data-tab="projects" onclick="showTab('projects')">PROJECTS</button></li>
+      <li><button class="nav-btn" data-tab="contact" onclick="showTab('contact')">CONTACT</button></li>
+      <button class="nav-cta" onclick="showTab('contact')">HIRE ME ✦</button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line-1">Hi, I'm Hariharan</span>
+        <span class="gradient-text">Full Stack Developer</span>
+      </h1>
+      <p class="hero-subtitle">
+        I craft stunning, high-performance web experiences — from pixel-perfect UIs to scalable back-end systems.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="showTab('projects')">View My Work →</button>
+        <button class="btn-secondary" onclick="showTab('contact')">Get In Touch</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Years Exp.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Passion</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="tab-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-desc">A developer who loves turning complex problems into elegant, user-friendly solutions.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image-frame">
+            <img src="image.jpeg" alt="Hariharan V" class="about-avatar-img" />
+          </div>
+          <div class="about-badge">
+            <span class="about-badge-number">3+</span>
+            <span class="about-badge-text">Years of Code</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3 class="about-heading">I BUILD THINGS FOR THE <span>WEB</span></h3>
+          <p class="about-para">
+            I'm a passionate Full Stack Developer based in India, specializing in building exceptional digital
+            experiences. With a strong foundation in both front-end and back-end development, I bring ideas to life
+            through clean, efficient code.
+          </p>
+          <p class="about-para">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open source, or working on
+            side projects that push the boundaries of what's possible on the web.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="tab-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Expertise</div>
+        <h2 class="section-title">My Core Skill</h2>
+        <p class="section-desc">My primary expertise and specialization as a developer.</p>
+      </div>
+      <div class="skill-solo-wrap">
+        <div class="skill-solo-card reveal">
+          <div class="skill-solo-icon">🧑‍💻</div>
+          <div class="skill-solo-body">
+            <div class="skill-solo-label">Primary Role</div>
+            <h3 class="skill-solo-title">Full Stack Developer</h3>
+            <p class="skill-solo-desc">
+              Building complete web applications end-to-end — from crafting responsive, pixel-perfect front-ends
+              to designing scalable back-end APIs and databases. Proficient across the entire development stack.
+            </p>
+            <div class="skill-solo-tags">
+              <span class="skill-solo-tag">Front-End</span>
+              <span class="skill-solo-tag">Back-End</span>
+              <span class="skill-solo-tag">Databases</span>
+              <span class="skill-solo-tag">REST APIs</span>
+            </div>
+            <div class="skill-solo-bar-wrap">
+              <span class="skill-solo-bar-label">Proficiency</span>
+              <span class="skill-solo-bar-pct">80%</span>
+            </div>
+            <div class="skill-bar" style="height:10px; border-radius:5px;">
+              <div class="skill-fill" style="--w:90%; border-radius:5px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-grid" style="display:none;">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-icon">⚛️</span>
+            <span class="skill-name">React / Next.js</span>
+            <span class="skill-level">92%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:92%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-icon">🟨</span>
+            <span class="skill-name">JavaScript / TypeScript</span>
+            <span class="skill-level">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:88%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-name">CSS / TailwindCSS</span>
+            <span class="skill-level">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <span class="skill-icon">🟢</span>
+            <span class="skill-name">Node.js / Express</span>
+            <span class="skill-level">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="tab-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A selection of my recent work — each one built with care and attention to detail.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-2">
+            <span class="project-thumb-icon">🌿</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Django</span><span class="tag">SQLite</span>
+            </div>
+            <h3 class="project-title">EcoTrack Climate App</h3>
+            <p class="project-desc">Environmental data tracker that helps users monitor their carbon footprint and
+              discover eco-friendly habits.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-3">
+            <span class="project-thumb-icon">📊</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Next.js</span><span class="tag">Chart.js</span><span class="tag">REST API</span>
+            </div>
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <p class="project-desc">A real-time analytics dashboard with interactive charts, data filtering, and
+              exportable reports for business insights.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-4">
+            <span class="project-thumb-icon">💬</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Socket.io</span><span class="tag">Express</span>
+            </div>
+            <h3 class="project-title">Real-Time Chat App</h3>
+            <p class="project-desc">A modern chat application with WebSocket-powered real-time messaging, room support,
+              and file sharing.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-5">
+            <span class="project-thumb-icon">🤖</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">OpenAI</span><span class="tag">FastAPI</span>
+            </div>
+            <h3 class="project-title">AI Content Generator</h3>
+            <p class="project-desc">An AI-powered content creation tool leveraging GPT models to generate blogs, social
+              posts, and marketing copy.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-6">
+            <span class="project-thumb-icon">🎵</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Spotify API</span><span class="tag">OAuth</span>
+            </div>
+            <h3 class="project-title">Music Visualizer</h3>
+            <p class="project-desc">A Spotify-connected music visualizer that generates beautiful real-time visual
+              effects synced to your current track.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="tab-section">
+    <div class="container">
+      <div class="section-header reveal" id="certSectionHeader">
+        <div class="section-tag">Achievements</div>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-desc">Verified credentials and professional certifications I've earned.</p>
+      </div>
+      <div class="cert-folders reveal" id="certFoldersView">
+
+        <!-- Infosys Certifications Folder -->
+        <div class="cf-card" onclick="openCertFolder('infosys')">
+          <div class="cf-icon-box" style="background:rgba(124,58,237,0.15); color:#a78bfa;">📁</div>
+          <div class="cf-content">
+            <div class="cf-org">Infosys Springboard</div>
+            <div class="cf-title">Infosys Certifications</div>
+            <div class="cf-meta">4 Certificates • 2024</div>
+          </div>
+          <div class="cf-arrow">›</div>
+        </div>
+
+        <!-- NASSCOM Folder -->
+        <div class="cf-card" onclick="openCertFolder('nasscom')">
+          <div class="cf-icon-box" style="background:rgba(56,189,248,0.15); color:#38bdf8;">💻</div>
+          <div class="cf-content">
+            <div class="cf-org">NASSCOM</div>
+            <div class="cf-title">NASSCOM Certifications</div>
+            <div class="cf-meta">1 Certificate • 2024</div>
+          </div>
+          <div class="cf-arrow">›</div>
+        </div>
+
+        <!-- NPTEL Folder -->
+        <div class="cf-card" onclick="openCertFolder('nptel')">
+          <div class="cf-icon-box" style="background:rgba(251,146,60,0.15); color:#fb923c;">🎨</div>
+          <div class="cf-content">
+            <div class="cf-org">NPTEL</div>
+            <div class="cf-title">NPTEL Certifications</div>
+            <div class="cf-meta">1 Certificate • 2024</div>
+          </div>
+          <div class="cf-arrow">›</div>
+        </div>
+
+        <!-- Port26 Folder -->
+        <div class="cf-card" onclick="openCertFolder('port26')">
+          <div class="cf-icon-box" style="background:rgba(52,211,153,0.15); color:#34d399;">🤖</div>
+          <div class="cf-content">
+            <div class="cf-org">Port26</div>
+            <div class="cf-title">Port26 Certifications</div>
+            <div class="cf-meta">4 Certificates • 2026</div>
+          </div>
+          <div class="cf-arrow">›</div>
+        </div>
+
+        <!-- Quiz & Events Folder -->
+        <div class="cf-card" onclick="openCertFolder('quiz')">
+          <div class="cf-icon-box" style="background:rgba(251,191,36,0.15); color:#fbbf24;">🏆</div>
+          <div class="cf-content">
+            <div class="cf-org">Competitions</div>
+            <div class="cf-title">Quiz & Event Certs</div>
+            <div class="cf-meta">4 Certificates • 2024–26</div>
+          </div>
+          <div class="cf-arrow">›</div>
+        </div>
+
+        <!-- Other Certs Folder -->
+        <div class="cf-card" onclick="openCertFolder('other')">
+          <div class="cf-icon-box" style="background:rgba(236,72,153,0.15); color:#f472b6;">📋</div>
+          <div class="cf-content">
+            <div class="cf-org">Miscellaneous</div>
+            <div class="cf-title">Other Certifications</div>
+            <div class="cf-meta">2 Certificates • 2024</div>
+          </div>
+          <div class="cf-arrow">›</div>
+        </div>
+
+      </div>
+      <!-- INLINE FOLDER VIEW -->
+      <div id="certInlineView" class="cert-inline-view" style="display: none;">
+        <div class="cert-inline-header">
+          <button class="cert-back-btn" onclick="closeCertFolder()">
+            <span class="back-arrow">‹</span> Back to Folders
+          </button>
+          <div class="cert-inline-title">
+            <span id="certInlineSub" style="color:#a78bfa; font-size:0.8rem; font-family:'Fira Code', monospace; display:block; margin-bottom:0.2rem;"></span>
+            <span id="certInlineTitle" style="font-size:1.4rem; font-weight:800;"></span>
+          </div>
+        </div>
+        <div class="cert-inline-scroll" id="certInlineScroll"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== PERSONAL INFO ===== -->
+  <section id="personal" class="tab-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Personal Info</h2>
+        <p class="section-desc">A little more about who I am beyond the code.</p>
+      </div>
+      <div class="personal-table-wrap reveal">
+        <table class="personal-table">
+          <tbody>
+            <tr>
+              <td class="pt-label">👤 FULL NAME</td>
+              <td class="pt-value">HARIHARAN V</td>
+            </tr>
+            <tr>
+              <td class="pt-label">👨‍👦 FATHER'S NAME</td>
+              <td class="pt-value">VENKATASA SAYE S</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🎂 DATE OF BIRTH</td>
+              <td class="pt-value">14-AUG2006</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🌍 NATIONALITY</td>
+              <td class="pt-value">Indian 🇮🇳</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🏠 HOME ADDRESS</td>
+              <td class="pt-value">377, VETTAVALAM ROAD, TIRUVANNAMALAI, TAMIL NADU, 606601
+              </td>
+            </tr>
+            <tr class="pt-section-header">
+              <td colspan="2" class="pt-section-title">🎓 Education</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🏫 College</td>
+              <td class="pt-value">SONA COLLEGE OF TECHNOLOGY</td>
+            </tr>
+            <tr>
+              <td class="pt-label">📘 Degree</td>
+              <td class="pt-value">B.E – Computer Science and Engineering (3rd Year)</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🏫 12th School</td>
+              <td class="pt-value">JEEVA VELU INTERNATIONAL SCHOOL</td>
+            </tr>
+            <tr>
+              <td class="pt-label">📊 12th Percentage</td>
+              <td class="pt-value">78%</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🏫 10th School</td>
+              <td class="pt-value">VIGNESH INTERNATIONAL SCHOOL</td>
+            </tr>
+            <tr>
+              <td class="pt-label">📊 10th Percentage</td>
+              <td class="pt-value">84%</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🗣️ LANGUAGES</td>
+              <td class="pt-value">Tamil, English</td>
+            </tr>
+            <tr>
+              <td class="pt-label">📧 EMAIL</td>
+              <td class="pt-value">hariharanv2006@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="pt-label">🎮 HOBBIES</td>
+              <td class="pt-value">CODING, GAMING, MUSIC</td>
+            </tr>
+            <tr>
+              <td class="pt-label">💼 STATUS</td>
+              <td class="pt-value">OPEN TO OPPORTUNITIES</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="tab-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-desc">Have a project in mind? I'd love to hear about it. Let's connect!</p>
+      </div>
+      <div class="contact-only reveal">
+        <h3 class="contact-info-heading">Get In <span>Touch</span></h3>
+        <p class="contact-info-desc">I'm currently available for freelance work and full-time opportunities. If you have
+          a project that needs some creative magic, feel free to reach out!</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <div class="contact-item-label">EMAIL</div>
+              <div class="contact-item-value">hariharanv2006@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">⏰</div>
+            <div>
+              <div class="contact-item-label">AVAILABILITY</div>
+              <div class="contact-item-value">MON – FRI, 9AM – 6PM IST</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">HARIHARAN V</div>
+    <p class="footer-text">Developed by Hariharan V · © 2026 All rights reserved.</p>
+  </footer>
+
+  <!-- ===== TAB NAVIGATION + ANIMATIONS ===== -->
+  <script>
+    // ── Tab switching ──────────────────────────────────────────
+    function _showTab(tabId) {
+      const sections = document.querySelectorAll('.tab-section');
+      const hero = document.getElementById('hero');
+      const footer = document.querySelector('footer');
+      const navBtns = document.querySelectorAll('.nav-btn');
+
+      // Update active nav button
+      navBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tabId));
+
+      if (!tabId) {
+        // Show hero, hide all tab sections
+        hero.style.display = '';
+        footer.style.display = '';
+        sections.forEach(s => { s.style.display = 'none'; });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      // Hide hero, show only the chosen tab section
+      hero.style.display = 'none';
+      footer.style.display = '';
+      sections.forEach(s => {
+        if (s.id === tabId) {
+          s.style.display = '';
+          // Trigger reveal animations fresh each time
+          s.querySelectorAll('.reveal').forEach(el => el.classList.remove('visible'));
+          setTimeout(() => {
+            s.querySelectorAll('.reveal').forEach((el, i) => {
+              setTimeout(() => el.classList.add('visible'), i * 100);
+            });
+          }, 20);
+          // Re-animate skill bars when Skills tab opens
+          if (tabId === 'skills') {
+            s.querySelectorAll('.skill-fill').forEach(f => f.classList.remove('animated'));
+            setTimeout(() => {
+              s.querySelectorAll('.skill-fill').forEach((f, i) => {
+                setTimeout(() => f.classList.add('animated'), 300 + i * 80);
+              });
+            }, 20);
+          }
+        } else {
+          s.style.display = 'none';
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ── Init: hide all tab sections on load ───────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.tab-section').forEach(s => s.style.display = 'none');
+      document.querySelectorAll('#hero .reveal').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 200 + i * 100);
+      });
+    });
+
+    // ── Cert bar animation on Certifications tab ──────────────
+    const origShow = showTab;
+    function showTab(tabId) {
+      _showTab(tabId);
+      if (tabId === 'certifications') {
+        const sec = document.getElementById('certifications');
+        sec.querySelectorAll('.cert-fill').forEach(f => f.classList.remove('cert-animated'));
+        setTimeout(() => {
+          sec.querySelectorAll('.cert-fill').forEach((f, i) => {
+            setTimeout(() => f.classList.add('cert-animated'), 300 + i * 100);
+          });
+        }, 20);
+      }
+    }
+
+    // ── Cert Folder Data ──────────────────────────────────────
+    const certFolders = {
+      infosys: {
+        org:   'Infosys Springboard',
+        title: 'Infosys Certifications',
+        certs: [
+          { img: 'pythonbasic.jpeg',       label: 'Python Basic',      badge: '🐍', num: '01' },
+          { img: 'python foundation.jpeg', label: 'Python Foundation', badge: '🐍', num: '02' },
+          { img: 'programming java.jpeg',  label: 'Programming Java',  badge: '☕', num: '03' },
+          { img: 'jdbc cert.jpeg',         label: 'JDBC Certificate',  badge: '🗄️', num: '04' },
+        ]
+      },
+      nasscom: {
+        org:   'NASSCOM',
+        title: 'NASSCOM Certifications',
+        certs: [
+          { img: 'nasscom-digital101.jpeg', label: 'Digital 101', badge: '💻', num: '01' },
+        ]
+      },
+      nptel: {
+        org:   'NPTEL',
+        title: 'NPTEL Certifications',
+        certs: [
+          { img: 'nptel design thinking.jpeg', label: 'Design Thinking', badge: '🎨', num: '01' },
+        ]
+      },
+      port26: {
+        org:   'Port26',
+        title: 'Port26 Certifications',
+        certs: [
+          { img: 'port26-aifordge.jpeg', label: 'AI for Edge',    badge: '🤖', num: '01' },
+          { img: 'port26-p1.jpeg',       label: 'Port26 Cert 1',  badge: '🏅', num: '02' },
+          { img: 'port26-p2.jpeg',       label: 'Port26 Cert 2',  badge: '🏅', num: '03' },
+          { img: 'port26-p3.jpeg',       label: 'Port26 Cert 3',  badge: '🏅', num: '04' },
+        ]
+      },
+      quiz: {
+        org:   'Competitions',
+        title: 'Quiz & Event Certificates',
+        certs: [
+          { img: 'mathsquiz24.jpeg',      label: 'Maths Quiz 2024',        badge: '🧮', num: '01' },
+          { img: 'mathsquiz26.jpeg',      label: 'Maths Quiz 2026',        badge: '🧮', num: '02' },
+          { img: 'quiz.jpeg',             label: 'Quiz Certificate',       badge: '🏆', num: '03' },
+          { img: 'youthaffairsquiz.jpeg', label: 'Youth Affairs Quiz',     badge: '🌟', num: '04' },
+        ]
+      },
+      other: {
+        org:   'Miscellaneous',
+        title: 'Other Certifications',
+        certs: [
+          { img: 'csc-adjb.jpeg',       label: 'CSC Certificate',          badge: '📋', num: '01' },
+          { img: 'phising email.jpeg',  label: 'Phishing Awareness',       badge: '🔒', num: '02' },
+        ]
+      }
+    };
+
+    function openCertFolder(key) {
+      const folder = certFolders[key];
+      if (!folder) return;
+      
+      document.getElementById('certInlineSub').textContent = folder.org;
+      document.getElementById('certInlineTitle').textContent = folder.title;
+      
+      const scrollArea = document.getElementById('certInlineScroll');
+      scrollArea.innerHTML = folder.certs.map(c => `
+        <div class="cert-inline-item">
+          <div class="cert-inline-meta">
+            <span class="cert-inline-badge">${c.badge}</span>
+            <span class="cert-inline-label">${c.label}</span>
+          </div>
+          <img src="${c.img}" alt="${c.label}" loading="lazy" />
+        </div>
+      `).join('');
+      
+      document.getElementById('certFoldersView').style.display = 'none';
+      document.getElementById('certSectionHeader').style.display = 'none';
+      document.getElementById('certInlineView').style.display = 'block';
+      window.scrollTo({ top: document.getElementById('certifications').offsetTop, behavior: 'smooth' });
+    }
+
+    function closeCertFolder() {
+      document.getElementById('certInlineView').style.display = 'none';
+      document.getElementById('certFoldersView').style.display = '';
+      document.getElementById('certSectionHeader').style.display = '';
+      window.scrollTo({ top: document.getElementById('certifications').offsetTop, behavior: 'smooth' });
+    }
+
+    // Advanced Scroll Reveal Animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  </script>
+
+</body>
+
+</html>
