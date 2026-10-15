@@ -8,9 +8,15 @@
     content="Hariharan V — Full Stack Developer & UI/UX Designer. Building beautiful, fast, and accessible web experiences." />
   <title>Hariharan V — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="theme.css" />
 </head>
 
 <body>
+
+  <!-- ===== VISUAL LAYER (preloader, transition, cursor, filter) ===== -->
+  <div id="preloader"><svg viewBox="0 0 100 100"><circle id="pl-track" cx="50" cy="50" r="45"/><circle id="pl-ring" cx="50" cy="50" r="45"/></svg><div id="pl-num">0%</div><div id="pl-name">HARIHARAN V</div></div>
+  <div id="wipe"></div><div id="cur-dot"></div><div id="cur-ring"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="liquid"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.04" numOctaves="2" seed="3" result="n"/><feDisplacementMap id="disp" in="SourceGraphic" in2="n" scale="0"/></filter></svg>
 
   <!-- ===== NAVBAR ===== -->
   <nav>
@@ -28,6 +34,7 @@
 
   <!-- ===== HERO ===== -->
   <section id="hero">
+    <button class="hero-ring" onclick="showTab('contact')" aria-label="OPEN TO OPPORTUNITIES"><svg viewBox="0 0 200 200"><defs><path id="ringpath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#ringpath">OPEN TO OPPORTUNITIES • FULL STACK DEVELOPER • </textPath></text></svg><span>↗</span></button>
     <div class="hero-bg">
       <div class="orb orb-1"></div>
       <div class="orb orb-2"></div>
@@ -279,7 +286,7 @@
           <div class="cf-content">
             <div class="cf-org">Infosys Springboard</div>
             <div class="cf-title">Infosys Certifications</div>
-            <div class="cf-meta">4 Certificates • 2024</div>
+            <div class="cf-meta">8 Certificates • 2024–26</div>
           </div>
           <div class="cf-arrow">›</div>
         </div>
@@ -385,6 +392,11 @@
               <td class="pt-label">🌍 NATIONALITY</td>
               <td class="pt-value">Indian 🇮🇳</td>
             </tr>
+            <tr>
+              <td class="pt-label">🏠 HOME ADDRESS</td>
+              <td class="pt-value">377, VETTAVALAM ROAD, TIRUVANNAMALAI, TAMIL NADU, 606601
+              </td>
+            </tr>
             <tr class="pt-section-header">
               <td colspan="2" class="pt-section-title">🎓 Education</td>
             </tr>
@@ -424,6 +436,10 @@
               <td class="pt-label">🎮 HOBBIES</td>
               <td class="pt-value">CODING, GAMING, MUSIC</td>
             </tr>
+            <tr>
+              <td class="pt-label">💼 STATUS</td>
+              <td class="pt-value">OPEN TO OPPORTUNITIES</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -454,7 +470,7 @@
             <div class="contact-item-icon">⏰</div>
             <div>
               <div class="contact-item-label">AVAILABILITY</div>
-              <div class="contact-item-value">MON – FRI, 9AM – 8PM IST</div>
+              <div class="contact-item-value">MON – FRI, 9AM – 6PM IST</div>
             </div>
           </div>
         </div>
@@ -548,10 +564,14 @@
         org:   'Infosys Springboard',
         title: 'Infosys Certifications',
         certs: [
-          { img: 'pythonbasic.jpeg',       label: 'Python Basic',      badge: '🐍', num: '01' },
-          { img: 'python foundation.jpeg', label: 'Python Foundation', badge: '🐍', num: '02' },
-          { img: 'programming java.jpeg',  label: 'Programming Java',  badge: '☕', num: '03' },
-          { img: 'jdbc cert.jpeg',         label: 'JDBC Certificate',  badge: '🗄️', num: '04' },
+          { img: 'pythonbasic.jpeg',       label: 'Python Basic',                badge: '🐍', num: '01' },
+          { img: 'python foundation.jpeg', label: 'Python Foundation',           badge: '🐍', num: '02' },
+          { img: 'programming java.jpeg',  label: 'Programming Java',            badge: '☕', num: '03' },
+          { img: 'jdbc cert.jpeg',         label: 'JDBC Certificate',            badge: '🗄️', num: '04' },
+          { img: 'nlp.jpeg',               label: 'Natural Language Processing', badge: '💬', num: '05' },
+          { img: 'ml using py.jpeg',       label: 'Machine Learning with Python', badge: '🧠', num: '06' },
+          { img: 'intro ai.jpeg',          label: 'Introduction to AI',          badge: '🤖', num: '07' },
+          { img: 'fullstackmern.jpeg',      label: 'Full Stack MERN',             badge: '⚛️', num: '08' },
         ]
       },
       nasscom: {
@@ -642,6 +662,7 @@
 
   </script>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
